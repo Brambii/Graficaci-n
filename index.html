@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="PENDIENTE: describe tu Museo Web de la Evolución Gráfica." />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Evolución de la graficación</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header>
+      <nav aria-label="Navegación principal">
+        <a href="#evolucion">Evolución</a>
+        <a href="#aplicacion">Aplicación</a>
+        <a href="#laboratorio">Color</a>
+        <a href="#algoritmo">Algoritmo</a>
+        <a href="#glosario">Glosario</a>
+        <a href="#conclusion">Conclusión</a>
+        <a href="#fuentes">Fuentes</a>
+      </nav>
+    </header>
+    <main id="contenido">
+      <section class="hero">
+        <h1>La graficación y su evolución</h1>
+        <p><strong>Definición de graficación:</strong></p>
+        <p>
+          La graficación es la rama de la informática que se dedica a crear, manipular y mostrar imágenes,
+          modelos e interfaces visuales (2D y 3D) a través de una computadora transformando datos numéricos y modelos matemáticos en elementos visuales para su representación en pantalla.
+        </p>
+        <p>Autor: Rodrigo Alfredo Brambila Guardado</p>
+      </section>
+
+      <section id="evolucion">
+        <h2>Cinco momentos de la evolución</h2>
+        
+        <article>
+          <h3>Momento 1: 1963 Sketchpad (Nace la graficación interactiva)</h3>
+          <p><strong>Limitación anterior:</strong> Visualización pasiva en pantallas de osciloscopio sin interacción directa; los gráficos eran generados por líneas de código batch.</p>
+          <p><strong>Cambio:</strong> Creación del primer programa con interfaz gráfica (GUI) e interacción directa mediante lápiz óptico.</p>
+          <p><strong>Impacto:</strong> Nació el concepto de objeto gráfico manipulable y sentó las bases del diseño asistido por computadora (CAD).</p>
+          <p><strong>Ejemplo actual:</strong> Interfaces táctiles, tabletas digitalizadoras y manipuladores de objetos en herramientas como AutoCAD o Figma.</p>
+          <img src="https://i.blogs.es/b5d7e1/sutherland/1366_2000.jpg" alt="Ivan Sutherland usando Sketchpad en 1963" width="450px">
+        </article>
+
+        <article>
+          <h3>Momento 2: Década de 1970: Algoritmos de renderizado y la Tetera de Utah</h3>
+          <p><strong>Limitación anterior:</strong> Objetos 3D planos con aspecto poligonal rígido ("facetado") sin profundidad, sombras ni texturas.</p>
+          <p><strong>Cambio:</strong> Invención de algoritmos fundamentales: Phong shading (suavizado de iluminación), mapeo de texturas y el buffer de profundidad (Z-buffer).</p>
+          <p><strong>Impacto:</strong> Permitió dar volumen, curvatura y apariencia realista a superficies digitales planas.</p>
+          <p><strong>Ejemplo actual:</strong> Aplicación de texturas fotorrealistas y sombras suaves sobre modelos 3D en software como Blender o Maya.</p>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Utah_teapot_simple_2.png" alt="Renderizado de la famosa Tetera de Utah" width="350px">
+        </article>
+
+        <article>
+          <h3>Momento 3: 1995: Toy Story (Primer largometraje 100% 3D)</h3>
+          <p><strong>Limitación anterior:</strong> La animación 3D se limitaba a cortometrajes experimentales o secuencias cortas de efectos especiales (VFX).</p>
+          <p><strong>Cambio:</strong> Integración de un pipeline de producción completo basado en software de renderizado (RenderMan) para una película de 81 minutos.</p>
+          <p><strong>Impacto:</strong> Demostró la viabilidad comercial y narrativa del renderizado 3D masivo, transformando la industria del cine animado.</p>
+          <p><strong>Ejemplo actual:</strong> Películas de animación totalmente digitales desarrolladas por estudios como Pixar, DreamWorks o Disney Animation.</p>
+          <img src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/518292de-1782-47c0-a96e-bd903a73d466/compose?aspectRatio=1.78&format=webp&width=1200" alt="Póster oficial de la película Toy Story" width="450px">
+        </article>
+
+        <article>
+          <h3>Momento 4: 1999: Nacimiento de la GPU (Nvidia GeForce 256)</h3>
+          <p><strong>Limitación anterior:</strong> La CPU realizaba todos los cálculos matemáticos de transformación e iluminación 3D, provocando cuellos de botella severos.</p>
+          <p><strong>Cambio:</strong> Creación de un procesador dedicado exclusivamente a gráficos en hardware con motores de Transformación e Iluminación (T&L).</p>
+          <p><strong>Impacto:</strong> Liberó a la CPU de la carga gráfica y masificó los videojuegos tridimensionales complejos en tiempo real.</p>
+          <p><strong>Ejemplo actual:</strong> Tarjetas gráficas dedicadas de escritorio y procesadores gráficos en smartphones modernos.</p>
+          <img src="https://img.asmedia.epimg.net/resizer/v2/ZZOQPKP4JVEYVG6EWE2RGFANSQ.jpg?auth=870b8b4527a62229dffa3cffe6bacb579aad0a4219b6dfc44e2b0b5f948ea2d4&width=1472&height=1104&smart=true" alt="Tarjeta gráfica Nvidia GeForce 256" width="350px">
+        </article>
+
+        <article>
+          <h3>Momento 5: 2018: Ray Tracing en tiempo real (Nvidia RTX)</h3>
+          <p><strong>Limitación anterior:</strong> El trazado de rayos (Ray Tracing) requería horas por fotograma en granjas de renderizado y no podía ejecutarse en vivo.</p>
+          <p><strong>Cambio:</strong> Inclusión de núcleos de hardware especializados (RT Cores) e Inteligencia Artificial (DLSS) para simular fotones de luz en tiempo real.</p>
+          <p><strong>Impacto:</strong> Iluminación global, reflejos exactos y refracciones hiperrealistas procesadas a más de 60 fotogramas por segundo.</p>
+          <p><strong>Ejemplo actual:</strong> Efectos de luz hiperrealistas en tiempo real en motores de videojuegos como Unreal Engine 5 y consolas de última generación.</p>
+          <img src="https://itcua-media-prod.fra1.cdn.digitaloceanspaces.com/uploads/2025/02/Snymok-ekrana-2025-02-14-175455-835x405.png" alt="Diagrama de funcionamiento del Ray Tracing" width="450px">
+        </article>
+      </section>
+
+      <section id="aplicacion">
+        <h2>Una aplicación real</h2>
+        <p>Diagnóstico médico y planificación quirúrgica de un tumor cerebral</p>
+        <p>Usuario: Un neurocirujano que necesita planificar una resección tumoral compleja minimizando el daño a zonas cerebrales funcionales (lenguaje, motricidad).</p>
+        <p>Problema: Las imágenes bidimensionales tradicionales de Resonancia Magnética (RM) obligan al cirujano a reconstruir mentalmente la anatomía 3D del paciente. Esto dificulta medir con precisión el volumen exacto del tumor y evaluar la cercanía a vías nerviosas críticas antes de incidir.</p>
+        <p>Datos: <br>
+            <ul>
+            <li>Imágenes DICOM: Múltiples cortes 2D tomados por resonancia magnética.</li> 
+            <li>Matrices de densidad: Valores numéricos escalares (unidades Hounsfield o intensidades de señal por píxel). </li>
+            <li>Coordenadas espaciales (x, y, z): Distancia y grosor entre cada corte magnético.</li> </p>
+        </ul>
+        <p>Representación: <br>
+            Técnica utilizada: Renderizado volumétrico tridimensional (Volume Rendering) e iso-superficies (Marching Cubes). <br>
+            Modelo visual: Un modelo 3D interactivo a color en pantalla: 
+            <ul>
+                <li>Tejido sano: Semitransparente para ver el interior del cráneo.</li>
+                <li>Tumor: Color rojo brillante con volumen y bordes delimitados.</li>
+                <li>Vías nerviosas y vasos sanguíneos: Vías en amarillo/rojo con opacidad completa.</li>
+            </ul>
+        </p>
+        <p>Decisión: Con el modelo 3D interactivo, el neurocirujano determina el ángulo de entrada óptimo para la incisión, define la trayectoria con menor riesgo de secuelas neurológicas y calcula la cantidad exacta de tejido a extirpar antes de entrar al quirófano.</p>
+      </section>
+
+      <section id="laboratorio">
+        <h2>Laboratorio de color</h2>
+        <article>
+          <h3>Experimento 1 (Caso Acromático / Blanco Puro)</h3>
+            <p><strong>Predicción:</strong> Al estar todos los canales RGB en su nivel máximo (255), delta será 0, la saturación 0% y el valor/luminosidad 100%.</p>
+            <p><strong>Datos:</strong></p>
+            <ul>
+                <li><strong>RGB:</strong> (255, 255, 255)</li>
+                <li><strong>CMY:</strong> (0%, 0%, 0%)</li>
+                <li><strong>Máximo (Cmáx):</strong> 255 | <strong>Mínimo (Cmín):</strong> 255 | <strong>Delta:</strong> 0</li>
+                <li><strong>HSV:</strong> (0°, 0%, 100%)</li>
+                <li><strong>HSL:</strong> (0°, 0%, 100%)</li>
+            </ul>
+            <p><strong>Conclusión basada en valores:</strong> Al no existir diferencia entre los canales (Delta = 0), no hay cromaticidad, por lo que la saturación es nula y el color resulta en un blanco puro de máxima luminosidad.</p>
+        </article>
+
+        <article>
+        <h3>Experimento 2 (Primario Puro / Verde Saturado)</h3>
+        <p><strong>Predicción:</strong> Un canal secundario en 0 garantizará una saturación máxima del 100% tanto en HSV como en HSL.</p>
+        <p><strong>Datos:</strong></p>
+        <ul>
+            <li><strong>RGB:</strong> (0, 255, 0)</li>
+            <li><strong>CMY:</strong> (100%, 0%, 100%)</li>
+            <li><strong>Máximo (Cmáx):</strong> 255 | <strong>Mínimo (Cmín):</strong> 0 | <strong>Delta:</strong> 255</li>
+            <li><strong>HSV:</strong> (120°, 100%, 100%)</li>
+            <li><strong>HSL:</strong> (120°, 100%, 50%)</li>
+        </ul>
+        <p><strong>Conclusión basada en valores:</strong> Dado que Cmín es 0, Delta es igual a Cmáx, lo que genera una saturación absoluta (100%). El modelo HSL marca 50% de luminosidad porque el color no contiene mezcla de blanco ni de negro.</p>
+        </article>
+
+        <article>
+        <h3>Experimento 3 (Diferencia entre HSL y HSV en Tonos Oscuros)</h3>
+        <p><strong>Predicción:</strong> En un tono azul oscuro con poca intensidad general, el Valor (V) reflejará el brillo del canal más alto mientras que la Luminosidad (L) será considerablemente menor.</p>
+        <p><strong>Datos:</strong></p>
+        <ul>
+            <li><strong>RGB:</strong> (0, 64, 128)</li>
+            <li><strong>CMY:</strong> (100%, 74.9%, 49.8%)</li>
+            <li><strong>Máximo (Cmáx):</strong> 128 | <strong>Mínimo (Cmín):</strong> 0 | <strong>Delta:</strong> 128</li>
+            <li><strong>HSV:</strong> (210°, 100%, 50.2%)</li>
+            <li><strong>HSL:</strong> (210°, 100%, 25.1%)</li>
+        </ul>
+        <p><strong>Conclusión basada en valores:</strong> Mientras HSV mide el brillo considerando únicamente la presencia del canal dominante (V = Cmáx / 255 = 50.2%), HSL promedia Cmáx y Cmín (L = (128 + 0) / 510 = 25.1%), mostrando cómo HSL percibe el tono como mucho más oscuro en comparación.</p>
+        </article>
+      </section>
+
+      <section id="algoritmo">
+        <h2>De la fórmula al algoritmo</h2>
+        <p>PENDIENTE: explica normalización, máximo, mínimo, delta y el caso acromático.</p>
+        <pre><code>function convertRGBtoHSV(r, g, b) {
+  const red = r / 255;
+  const green = g / 255;
+  const blue = b / 255;
+
+  const Vmax = Math.max(red, green, blue);
+  const Vmin = Math.min(red, green, blue);
+  const delta = Vmax - Vmin;
+  
+  let v = Vmax * 100;
+  let s = 0;
+  let h = 0;
+  
+  if (Vmax !== 0) {
+    s = (delta / Vmax) * 100; 
+  } else {
+    s = 0;
+  }
+
+  if (delta !== 0) {
+    if (Vmax === red) { 
+      h = 60 * (((green - blue) / delta) % 6);
+    } else if (Vmax === green) {
+      h = 60 * (((blue - red) / delta) + 2);
+    } else {
+      h = 60 * (((red - green) / delta) + 4);
+    }
+
+    if (h < 0) {
+      h += 360;
+    }
+  }
+
+  return [h, s, v];
+}</code></pre>
+      </section>
+
+      <section id="glosario">
+        <h2>Glosario</h2>
+        <dl>
+    <dt><strong>1. Graficación por computadora</strong></dt>
+    <dd>
+      <strong>Explicación:</strong> Es la disciplina de las ciencias de la computación que se encarga de crear, procesar, transformar y desplegar imágenes o modelos sintéticos mediante algoritmos y código.
+      <br><strong>Ejemplo:</strong> La interfaz gráfica de un sistema operativo como Windows o macOS al dibujar las ventanas y botones en pantalla.
+    </dd>
+
+    <dt><strong>2. Renderizado (Rendering)</strong></dt>
+    <dd>
+      <strong>Explicación:</strong> Es el proceso matemático de calcular e interpretar la luz, sombras, texturas y geometría de una escena 3D para generar una imagen final plana en 2D.
+      <br><strong>Ejemplo:</strong> El procesamiento final que realiza un programa como Blender para guardar una imagen fotorrealista a partir de un modelo 3D.
+    </dd>
+
+    <dt><strong>3. GPU (Unidad de Procesamiento Gráfico)</strong></dt>
+    <dd>
+      <strong>Explicación:</strong> Es un procesador de hardware diseñado específicamente para realizar miles de cálculos matemáticos de manera simultánea, liberando a la CPU de la carga visual.
+      <br><strong>Ejemplo:</strong> Una tarjeta de video Nvidia RTX o AMD Radeon procesando los gráficos de un videojuego moderno.
+    </dd>
+
+    <dt><strong>4. Ray Tracing (Trazado de Rayos)</strong></dt>
+    <dd>
+      <strong>Explicación:</strong> Técnica de iluminación que simula el comportamiento físico real de los fotones de luz cuando rebotan e interactúan con los objetos de un entorno digital.
+      <br><strong>Ejemplo:</strong> El reflejo exacto y detallado del personaje principal en el cristal de un escaparate mientras camina bajo la lluvia en un videojuego.
+    </dd>
+
+    <dt><strong>5. Mapeo de texturas (Texture Mapping)</strong></dt>
+    <dd>
+      <strong>Explicación:</strong> Método que consiste en "envolver" una imagen plana (2D) sobre la superficie de una estructura o modelo tridimensional para darle apariencia detallada sin aumentar su complejidad geométrica.
+      <br><strong>Ejemplo:</strong> Pegar la imagen de una piel de ladrillo sobre una pared 3D totalmente plana para que parezca de construcción real.
+    </dd>
+
+    <dt><strong>6. Z-Buffer (Buffer de profundidad)</strong></dt>
+    <dd>
+      <strong>Explicación:</strong> Es una zona de memoria que guarda la distancia de cada píxel respecto a la cámara digital para saber qué objetos están al frente y cuáles deben quedar ocultos detrás.
+      <br><strong>Ejemplo:</strong> Evitar que la espalda de un personaje en un juego se dibuje por encima de la mochila que lleva puesta.
+    </dd>
+
+    <dt><strong>7. Espacio de color (ej. RGB, HSV)</strong></dt>
+    <dd>
+      <strong>Explicación:</strong> Un sistema o modelo matemático organizado que permite clasificar, representar y calcular numéricamente los colores en un dispositivo digital.
+      <br><strong>Ejemplo:</strong> Utilizar valores como rgb(255, 0, 0) en CSS para indicarle al monitor que encienda únicamente los subpíxeles rojos al máximo.
+    </dd>
+
+    <dt><strong>8. Tasa de refresco / FPS (Fotogramas por segundo)</strong></dt>
+    <dd>
+      <strong>Explicación:</strong> La cantidad de imágenes individuales que la tarjeta gráfica y la pantalla proyectan secuencialmente en un segundo para generar la sensación de movimiento fluido.
+      <br><strong>Ejemplo:</strong> Una animación ejecutándose a 60 FPS se percibe mucho más fluida y natural que una a 15 FPS.
+    </dd>
+
+    <dt><strong>9. Caso Acromático</strong></dt>
+    <dd>
+      <strong>Explicación:</strong> Es la condición en la cual todos los canales de color primario (R, G, B) tienen exactamente la misma intensidad, eliminando el tinte o matiz y generando un tono de gris, blanco o negro.
+      <br><strong>Ejemplo:</strong> Un valor RGB de (128, 128, 128), cuyo delta es 0, lo que produce un color gris neutro sin saturación.
+    </dd>
+
+    <dt><strong>10. Normalización de datos</strong></dt>
+    <dd>
+      <strong>Explicación:</strong> Proceso numérico de ajustar o escalar valores de un rango amplio (como de 0 a 255) a un intervalo estandarizado entre 0 y 1 para facilitar cálculos algorítmicos complejos.
+      <br><strong>Ejemplo:</strong> Dividir el valor 255 entre 255 para obtener 1.0 (100%) en la conversión matemática de canales RGB a modelos HSV.
+    </dd>
+  </dl>
+      </section>
+
+      <section id="conclusion">
+        <h2>Conclusión</h2>
+        <p>Antes pensaba que la graficación por computadora se limitaba a dibujar formas en pantalla o añadir efectos visuales a los juegos. 
+        La evidencia analizada a lo largo de este proyecto (desde la invención del control interactivo con Sketchpad hasta la física de luz en tiempo real con Ray Tracing) 
+        cambió mi idea porque me demostró que detrás de cada píxel existe una compleja base matemática y algorítmica. 
+        Comprender cómo se manipulan los espacios de color (RGB, HSV, HSL) y cómo la GPU optimiza millones de cálculos por segundo permite apreciar la graficación 
+        no solo como una herramienta estética, sino como una infraestructura computacional esencial para la ciencia, el diseño y el entrenamiento visual actual.
+        </p>
+      </section>
+
+      <section id="fuentes">
+        <h2>Fuentes y créditos</h2>
+        <ol>
+    <li>
+      <strong>Sutherland, I. E.</strong> (1963). <em>Sketchpad: A man-machine graphical communication system</em>. Massachusetts Institute of Technology (MIT). 
+      URL: <a href="https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-574.pdf" target="_blank" rel="noopener">https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-574.pdf</a>. 
+    </li>
+    <li>
+      <strong>Catmull, E.</strong> (1974). <em>A Subdivision Algorithm for Display of Curved Surfaces</em>. University of Utah, Computer Science Department. 
+      URL: <a href="https://graphics.pixar.com/library/" target="_blank" rel="noopener">https://graphics.pixar.com/library/</a>. 
+    </li>
+    <li>
+      <strong>NVIDIA Corporation</strong> (1999). <em>NVIDIA GeForce 256: The World's First GPU</em>. NVIDIA Newsroom. 
+      URL: <a href="https://www.nvidia.com" target="_blank" rel="noopener">https://www.nvidia.com</a>. 
+    </li>
+    <li>
+      <strong>MDN Web Docs</strong> (2025). <em>Applying color using CSS & CSS Color Modules</em>. Mozilla Developer Network. 
+      URL: <a href="https://developer.mozilla.org/es/docs/Web/CSS/color" target="_blank" rel="noopener">https://developer.mozilla.org/es/docs/Web/CSS/color</a>. 
+    </li>
+    <li>
+      <strong>Foley, J. D., & van Dam, A.</strong> (1996). <em>Computer Graphics: Principles and Practice</em> (2da ed.). Addison-Wesley Professional.
+    </li>
+  </ol>
+      </section>
+    </main>
+    <footer>
+      <p>Rodrigo Alfredo Brambila Guardado | Ing. en Sistemas Computacionales</p>
+    </footer>
+  </body>
+</html>

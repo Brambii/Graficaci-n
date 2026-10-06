@@ -152,31 +152,34 @@
         <h2>De la fórmula al algoritmo</h2>
         <p>PENDIENTE: explica normalización, máximo, mínimo, delta y el caso acromático.</p>
         <pre><code>function convertRGBtoHSV(r, g, b) {
-  const red = r / 255;
-  const green = g / 255;
-  const blue = b / 255;
+function convertRGBtoHSV(r, g, b) {
+  // Normalizar valores de 0 a 255 al rango 0 a 1
+  const rNorm = r / 255;
+  const gNorm = g / 255;
+  const bNorm = b / 255;
 
-  const Vmax = Math.max(red, green, blue);
-  const Vmin = Math.min(red, green, blue);
-  const delta = Vmax - Vmin;
-  
-  let v = Vmax * 100;
+  const max = Math.max(rNorm, gNorm, bNorm);
+  const min = Math.min(rNorm, gNorm, bNorm);
+  const delta = max - min;
+
+  // Calculamos el Valor (V) en porcentaje (0 a 100)
+  const v = max * 100;
+
+  // Calculamos la Saturación (S) en porcentaje (0 a 100)
   let s = 0;
-  let h = 0;
-  
-  if (Vmax !== 0) {
-    s = (delta / Vmax) * 100; 
-  } else {
-    s = 0;
+  if (max !== 0) {
+    s = (delta / max) * 100;
   }
 
+  // Calculamos el Tono (H) en grados (0 a 360)
+  let h = 0;
   if (delta !== 0) {
-    if (Vmax === red) { 
-      h = 60 * (((green - blue) / delta) % 6);
-    } else if (Vmax === green) {
-      h = 60 * (((blue - red) / delta) + 2);
+    if (max === rNorm) {
+      h = 60 * (((gNorm - bNorm) / delta) % 6);
+    } else if (max === gNorm) {
+      h = 60 * ((bNorm - rNorm) / delta + 2);
     } else {
-      h = 60 * (((red - green) / delta) + 4);
+      h = 60 * ((rNorm - gNorm) / delta + 4);
     }
 
     if (h < 0) {
@@ -184,7 +187,7 @@
     }
   }
 
-  return [h, s, v];
+  return { h, s, v };
 }</code></pre>
       </section>
 
